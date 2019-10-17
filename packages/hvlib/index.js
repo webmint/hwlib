@@ -1,1 +1,2 @@
-export * from '../cjs/'
+export * from './src'
+export { default } from './src'

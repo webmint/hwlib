@@ -1,10 +1,10 @@
 <template>
-  <div :class="$style.hello">
-    HelloABC
+  <div class="hello">
+    HelloA
   </div>
 </template>
 
-<style module>
+<style>
 .hello {
   color: orange;
 }
