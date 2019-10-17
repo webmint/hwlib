@@ -1,0 +1,93 @@
+@import "colors";
+
+$primary: $color-1;
+$border-radius: 2px;
+
+/*card*/
+$card-cap-bg: $color-7;
+$card-cap-color: $color-3;
+$card-spacer-x: 32px;
+$card-spacer-y: 4px;
+$card-bg: $color-5;
+$card-border-width: 0px;
+
+/*typo*/
+$h1-font-size: 36px;
+$h2-font-size: 24px;
+$h3-font-size: 18px;
+$h4-font-size: 16px;
+$h5-font-size: 16px;
+
+/*progress-bar*/
+$progress-bg: $color-6;
+
+/*table*/
+$table-dark-bg: $color-7;
+.table.b-table {
+  &.table-dark > thead > tr ,
+  > .thead-dark > tr {
+    > [aria-sort="none"],
+    > [aria-sort="descending"],
+    > [aria-sort="ascending"] {
+      background-image: none;
+    }
+
+    > th[aria-sort] {
+      &:after {
+        content: '';
+        width: 12px;
+        height: 16px;
+        position: relative;
+        display: inline-block;
+        transform: translateY(4px);
+        background-repeat: no-repeat;
+        background-size: 12px 16px;
+        margin-left: 8px;
+      }
+
+      &[aria-sort="none"]:after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'%3e%3cpath fill='white' opacity='.3' d='M51 1l25 23 24 22H1l25-22zM51 101l25-23 24-22H1l25 22z'/%3e%3c/svg%3e");
+      }
+
+      &[aria-sort="descending"]:after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'%3e%3cpath fill='white' opacity='.3' d='M51 1l25 23 24 22H1l25-22z'/%3e%3cpath fill='white' d='M51 101l25-23 24-22H1l25 22z'/%3e%3c/svg%3e");
+      }
+
+      &[aria-sort="ascending"]:after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'%3e%3cpath fill='white' d='M51 1l25 23 24 22H1l25-22z'/%3e%3cpath fill='white' opacity='.3' d='M51 101l25-23 24-22H1l25 22z'/%3e%3c/svg%3e");
+      }
+    }
+  }
+}
+
+/*grid*/
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+/*checkbox*/
+$border-radius: 3px;
+$component-active-bg: transparent;
+$custom-control-indicator-checked-color: $color-5;
+.custom-control-label {
+  cursor: pointer;
+  &::before {
+    width: 25px;
+    height: 25px;
+  }
+  &::after {
+    width: 25px;
+    height: 25px;
+    background-size: 80%;
+    background-position: center;
+  }
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url(~@/assets/images/icons/checkbox.svg);
+  background-size: 100%;
+}

@@ -1,0 +1,71 @@
+/* Fonts */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/helveticaNeue/HelveticaNeue.eot');
+  src: url('../fonts/helveticaNeue/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/helveticaNeue/HelveticaNeue.woff2') format('woff2'),
+  url('../fonts/helveticaNeue/HelveticaNeue.woff') format('woff'),
+  url('../fonts/helveticaNeue/HelveticaNeue.ttf') format('truetype'),
+  url('../fonts/helveticaNeue/HelveticaNeue.svg#HelveticaNeue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/helveticaNeue/HelveticaNeue-Bold.eot');
+  src: url('../fonts/helveticaNeue/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/helveticaNeue/HelveticaNeue-Bold.woff2') format('woff2'),
+  url('../fonts/helveticaNeue/HelveticaNeue-Bold.woff') format('woff'),
+  url('../fonts/helveticaNeue/HelveticaNeue-Bold.ttf') format('truetype'),
+  url('../fonts/helveticaNeue/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$fontFamily: "Helvetica Neue", sans-serif;
+
+body {
+  font-size: 14px;
+  font-family: $fontFamily;
+}
+
+.headline-1 {
+  font-family: $fontFamily;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+.headline-2 {
+  font-family: $fontFamily;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.headline-3 {
+  font-family: $fontFamily;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.headline-4 {
+  font-family: $fontFamily;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.regular {
+  font-family: $fontFamily;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.caption {
+  font-family: $fontFamily;
+  font-size: 14px;
+  line-height: 20px;
+}

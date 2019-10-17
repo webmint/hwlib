@@ -4,9 +4,10 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+  @import './assets/styles/variables';
 .hello {
-  color: orange;
+  color: $scarlet;
 }
 </style>
 

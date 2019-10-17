@@ -1,0 +1,27 @@
+/* SCSS colors */
+@import './_variables.scss';
+
+$colorsArray: (
+        scarlet: $scarlet,
+        black: $black,
+        mine-shaft: $mine-shaft,
+        ebony: $ebony,
+        white: $white,
+        dark-grey: $dark-grey,
+        middle-grey: $middle-grey,
+        light-grey: $light-grey,
+        totem-pole: $totem-pole,
+        nepal: $nepal,
+        green-haze: $green-haze,
+        california: $california,
+);
+
+@each $value in $colorsArray {
+  .#{nth($value, 1)} {
+    background-color: nth($value, 2) !important;
+  }
+
+  .#{nth($value, 1)}--text {
+    color: nth($value, 2) !important;
+  }
+}
