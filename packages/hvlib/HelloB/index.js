@@ -1,2 +1,1 @@
-export * from '../src/HelloB'
-export { default } from '../src/HelloB'
+export * from '../cjs/'
