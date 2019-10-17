@@ -117,7 +117,10 @@ function renameIndex(componentName) {
   fs.writeFileSync(
     path.resolve(destPackageFolder, 'index.js'),
     `\
-export * from '../cjs/'
+export * from './src${componentName ? '/' + componentName + '.vue' : ''}'
+export { default } from './src${
+      componentName ? '/' + componentName + '.vue' : ''
+    }'
 `
   )
 
@@ -194,7 +197,8 @@ THE SOFTWARE.
     fs.writeFileSync(
       path.resolve(componentPackageFolder, 'index.js'),
       `\
-export * from '../cjs/'
+export * from '${path.join('../src', componentName || '')}'
+export { default } from '${path.join('../src', componentName || '')}'
 `
     )
   }
