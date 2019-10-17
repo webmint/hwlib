@@ -211,6 +211,7 @@ function generatePackageJson(package) {
       name: package.name,
       description: package.description,
       author: libConfig.author,
+      version: libConfig.version,
       license: 'MIT',
       homepage: `https://www.npmjs.com/package/${package.name}`,
       repository: {

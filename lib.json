@@ -1,6 +1,7 @@
 {
   "name": "hvlib",
   "description": "An example component library built with Vue CLI 3.",
+  "version": "0.1.2",
   "author": {
     "name": "Chris Fritz",
     "email": "chrisvfritz@gmail.com",

@@ -6,6 +6,7 @@
     "email": "chrisvfritz@gmail.com",
     "github": "chrisvfritz"
   },
+  "version": "0.1.2",
   "license": "MIT",
   "homepage": "https://www.npmjs.com/package/hvlib.hello-a",
   "repository": {
